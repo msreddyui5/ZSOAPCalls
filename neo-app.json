@@ -1,0 +1,53 @@
+{
+  "welcomeFile": "/webapp/index.html",
+  "routes": [
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources",
+        "version": "1.52.13"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/csp",
+      "target": {
+        "type": "destination",
+        "name": "SOAP",
+        "entryPath": "/csp"
+      },
+      "description": "SOAP Service Call Destination connection"
+    },
+    {
+      "path": "/v2",
+      "target": {
+        "type": "destination",
+        "name": "Northwind",
+        "entryPath": "/v2"
+      },
+      "description": "Northwind Service Call Destination connection"
+    },
+     {
+      "path": "/V3",
+      "target": {
+        "type": "destination",
+        "name": "Northwind",
+        "entryPath": "/V3"
+      },
+      "description": "SOAP Service Call Destination connection"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources",
+        "version": "1.52.13"
+      },
+      "description": "SAPUI5 Test Resources"
+    }
+  ],
+  "sendWelcomeFileRedirect": true
+}
